@@ -4,7 +4,254 @@
 
 
 /* Állatos rész */
+.allat-html {
+    margin: 0;
+    padding: 0;
+}
 
+.allat-body {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    background-color:  #2E5339;
+}
+
+.allat-body img {
+    border-radius: 50%;
+    float: justify;
+    margin: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px grey;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.allat-body p {
+    font-size: 120%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+#allat-nav {
+    text-align: center;
+    font-size: 24px;
+    background-color: #8B5A2B;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+
+}
+
+#allat-nav a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+    margin: 5px;
+}
+
+#allat-nav a:hover {
+    background-color: #E3B23C;
+    color: black;
+}
+
+.allat-header {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 250%;
+    background-color: #4F7942;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.allat-intro {
+    text-align: justify;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #D9D9D6;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    grid-area: intro;
+    justify-self: center;
+    align-self: center;
+}
+.allat-intro2 {
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #D9D9D6;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    grid-area: intro2;
+    justify-self: center;
+    align-self: center; 
+
+}
+.allat-h2 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 200%;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    margin: 20px;
+}
+
+.allat-egy p {
+    font-size: 120%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+.allat-egy img {
+    border-radius: 50%;
+    float: justify;
+    margin: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px grey;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.allat-img-right {
+    float: right;
+}
+
+.allat-img-left {
+    float: left;
+}
+
+.allat-h3-left {
+    text-align: left;
+}
+
+
+.allat-footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90%;
+    background-color: #8B5A2B;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+.allat-container {
+    display: grid;
+  grid-template-areas:
+    "intro intro2"
+    "A1 tartalom"
+    "A2 tartalom"
+    "A3 tartalom"
+    "A4 tartalom";
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 5px;
+}
+.tartalom{
+    grid-area: tartalom;
+    color: white;
+    text-align: justify;
+}
+.allat-egy {
+    width: 200px;
+    height: 200px;
+    background-color: none;
+    transition: width 1s, font-size 1s;
+    font-size: 0;
+    color: white;
+    grid-area: A1;
+}
+
+.allat-egy:hover {
+    width: 800px;
+    font-size: 20px;
+    margin: 30px;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+    text-align: justify;
+    color: white;
+    text-shadow: 10px black;
+}
+
+.allat-ketto {
+    width: 200px;
+    height: 200px;
+    transition: width 1s, font-size 1s;
+    font-size: 0;
+    color: white;
+    grid-area: A2;
+}
+
+.allat-ketto:hover {
+    width: 800px;
+    font-size: 20px;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.allat-harom {
+    width: 200px;
+    height: 200px;
+    transition: width 1s, font-size 1s;
+    font-size: 0;
+    color: white;
+    grid-area: A3;
+}
+
+.allat-harom:hover {
+    width: 800px;
+    font-size: 20px;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.allat-negy {
+    width: 200px;
+    height: 200px;
+    transition: width 1s, font-size 1s;
+    font-size: 0;
+    color: white;
+    grid-area: A4;
+}
+
+.allat-negy:hover {
+    width: 800px;
+    font-size: 20px;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .allat-container{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .allat-body{
+        width: 100%;
+    }
+}
 
 
 
