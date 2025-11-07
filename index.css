@@ -243,16 +243,78 @@
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .allat-container{
-        grid-template-columns: 1fr;
+@media screen and (max-width: 480px) {
+    .allat-egy,
+    .allat-ketto,
+    .allat-harom,
+    .allat-negy {
+        max-width: 300px;
+        font-size: 14px;
+    }
+    #allat-nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+    .allat-header{
+        display: flex; 
+        justify-content: center; 
+        padding: 10px;
+        margin: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 250%;
+        background-color: #4F7942;
+        color: white;
+        border-radius: 10px;
         width: 100%;
     }
-    .allat-body{
-        width: 100%;
+    .allat-nav{
+        max-width: 100%;
     }
 }
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+    .allat-egy,
+    .allat-ketto,
+    .allat-harom,
+    .allat-negy {
+        max-width: 850px;
+        font-size: 16px;
+        transition: none;
 
-
-
+    }
+    .allat-egy:hover,
+    .allat-ketto:hover,
+    .allat-harom:hover,
+    .allat-negy:hover {
+        transition: none;
+    }
+    .allat-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "intro"
+        "A1"
+        "A2"
+        "A3"
+        "A4"
+        "intro2"
+        "tartalom";
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1224px) {
+    .allat-egy,
+    .allat-ketto,
+    .allat-harom,
+    .allat-negy {
+        max-width: 600px;
+    }
+}
+@media screen and (min-width: 1225px) {
+    .allat-egy,
+    .allat-ketto,
+    .allat-harom,
+    .allat-negy {
+        max-width: 710px;
+    }
+}
 /* Rendszergazda rész */
