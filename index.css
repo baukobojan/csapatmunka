@@ -243,52 +243,64 @@
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 0px) {
     .allat-egy,
     .allat-ketto,
     .allat-harom,
     .allat-negy {
-        max-width: 300px;
-        font-size: 14px;
-    }
-    #allat-nav{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 10px 0;
-    }
-    .allat-header{
-        display: flex; 
-        justify-content: center; 
-        padding: 10px;
-        margin: 20px;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 250%;
-        background-color: #4F7942;
-        color: white;
-        border-radius: 10px;
-        width: 100%;
-    }
-    .allat-nav{
-        max-width: 100%;
-    }
-}
-@media screen and (max-width: 1024px) and (min-width: 481px) {
-    .allat-egy,
-    .allat-ketto,
-    .allat-harom,
-    .allat-negy {
-        max-width: 850px;
+        width: 100%; 
+        height: auto; 
         font-size: 16px;
         transition: none;
-
+        margin: 10px 0;
+        padding: 10px; 
     }
+
     .allat-egy:hover,
     .allat-ketto:hover,
     .allat-harom:hover,
     .allat-negy:hover {
-        transition: none;
+        width: 100%;
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 10px;
     }
+
+   .allat-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "intro"
+        "A1"
+        "A2"
+        "A3"
+        "A4"
+        "intro2"
+        "tartalom";
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 481px) {
+      .allat-egy,
+    .allat-ketto,
+    .allat-harom,
+    .allat-negy {
+        width: 100%; 
+        height: auto; 
+        font-size: 16px; 
+        transition: none; 
+        margin: 10px 0; 
+        padding: 10px; 
+    }
+
+    .allat-egy:hover,
+    .allat-ketto:hover,
+    .allat-harom:hover,
+    .allat-negy:hover {
+        width: 100%;
+        font-size: 16px;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
     .allat-container{
         grid-template-columns: 1fr;
         grid-template-areas: 
