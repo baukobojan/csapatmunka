@@ -1,3 +1,27 @@
+body {
+  background-color: rgb(224, 224, 223);
+}
+
+.gombok {
+  display: inline-block;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 30px;
+  background-color: rgb(16, 134, 95);
+  text-align: center;
+  max-width: 150px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+}
+
+.gombok:hover {
+  color: rgb(16, 134, 95);
+  background-color: white;
+
+}
+
 /* Kocsis rész */
 .kocsis-html {
     margin: 0;
